@@ -1,7 +1,7 @@
 use crate::{Runner, Selector};
 
 mod aoc2022_01;
-
+mod aoc2022_02;
 // mod aoc2022_04;
 // mod aoc2022_05;
 // mod aoc2022_06;
@@ -26,7 +26,7 @@ mod aoc2022_01;
 // mod aoc2022_25;
 
 use aoc2022_01::*;
-// use aoc2022_02::*;
+use aoc2022_02::*;
 // use aoc2022_03::*;
 // use aoc2022_04::*;
 // use aoc2022_05::*;
@@ -53,7 +53,7 @@ use aoc2022_01::*;
 
 pub fn run_2022(which: Selector) {
     let mut day01 = Aoc2022_01::new();
-    // let mut day02 = Aoc2022_02::new();
+    let mut day02 = Aoc2022_02::new();
     // let mut day03 = Aoc2022_03::new();
     // let mut day04 = Aoc2022_04::new();
     // let mut day05 = Aoc2022_05::new();
@@ -78,7 +78,7 @@ pub fn run_2022(which: Selector) {
     // let mut day24 = Aoc2022_24::new();
     // let mut day25 = Aoc2022_25::new();
 
-    let mut days: Vec<&mut dyn Runner> = vec![&mut day01];
+    let mut days: Vec<&mut dyn Runner> = vec![&mut day01, &mut day02];
 
     match which {
         Selector::Last => {
